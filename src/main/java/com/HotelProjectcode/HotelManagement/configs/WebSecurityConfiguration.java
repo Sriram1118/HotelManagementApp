@@ -2,7 +2,7 @@ package com.HotelProjectcode.HotelManagement.configs;
 
 import com.HotelProjectcode.HotelManagement.enums.UserRole;
 import com.HotelProjectcode.HotelManagement.services.jwt.UserService;
-import lombok.RequiredArgsConstructor;
+import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -20,7 +20,7 @@ import static org.springframework.security.config.http.SessionCreationPolicy.STA
 
 @Configuration
 @EnableWebSecurity
-@RequiredArgsConstructor
+@AllArgsConstructor
 public class WebSecurityConfiguration {
 
     private final UserService userService;
