@@ -21,7 +21,7 @@ public class Room {
 
     private Long price;
 
-    private Boolean available;
+    private Boolean available = true; //to-do - false needed ?
 
     public RoomDto getRoomDto(){
         RoomDto roomDto = new RoomDto();
